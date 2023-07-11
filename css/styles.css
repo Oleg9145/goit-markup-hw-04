@@ -398,20 +398,42 @@ body {
 .footer {
   padding: 100px 0;
 }
+
+.olo {
+  display: flex;
+  width: 592px;
+}
+.footer-div {
+}
+
+.media {
+  color: #fff;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+.madia-div {
+}
 .footer-div a {
   display: inline-block;
   margin-bottom: 16px;
 }
+
 .footer-p {
-  margin: 0 0 0 0;
+  flex-basis: 20%;
+  flex-shrink: 0;
   width: 264px;
   flex-direction: column;
-  flex-shrink: 0;
 }
 .icon-footer {
   fill: #fff;
 }
 .icon-f-ul {
+  padding: 0;
   display: flex;
   gap: 16px;
 }
