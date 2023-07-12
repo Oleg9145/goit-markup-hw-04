@@ -428,8 +428,7 @@ body {
   display: flex;
   width: 592px;
 }
-.footer-div {
-}
+
 .icon-social {
   display: flex;
   width: 40px;
@@ -538,7 +537,12 @@ body {
   transform: translateY(0);
 }
 
-.portfolio-link:hover.portfolio-img {
+.portfolio-link:hover .portfolio-img {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.index-list:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
