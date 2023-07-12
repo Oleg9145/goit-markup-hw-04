@@ -95,7 +95,30 @@ body {
   align-items: center;
   gap: 40px;
 }
-
+.contakts::after {
+  content: "";
+  width: 100%;
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  background-color: #404bbf;
+}
+.portfolio::after {
+  content: "";
+  width: 100%;
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  background-color: #404bbf;
+}
+.studio::after {
+  content: "";
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  flex-shrink: 0;
+  background-color: #404bbf;
+}
 .link {
   text-decoration: none;
 }
@@ -476,6 +499,7 @@ body {
 .portfolio-list {
   width: calc((100% - 48px) / 3);
   margin: 0 auto;
+  position: relative;
 }
 
 .projeckt-ul {
@@ -495,4 +519,19 @@ body {
 
 .projekt-title {
   margin-bottom: 8px;
+}
+.projekt-par-two {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  width: 360px;
+  height: 300px;
+  background-color: #404bbf;
 }
