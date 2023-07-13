@@ -124,6 +124,8 @@ body {
 }
 .li-style:hover,
 .li-style:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   color: #404bbf;
 }
 
@@ -191,9 +193,13 @@ body {
   border: none;
 }
 .botton-one:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   background-color: #404bbf;
 }
 .botton-one:hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   background-color: #404bbf;
 }
 .title,
@@ -242,6 +248,8 @@ body {
 }
 
 .all {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -256,11 +264,15 @@ body {
   background: #f4f4fd;
 }
 .all:hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   color: #ffffff;
   background-color: #404bbf;
   border: 1px solid transparent;
 }
 .all:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   color: #ffffff;
   background-color: #404bbf;
   border: 1px solid transparent;
@@ -385,6 +397,8 @@ body {
   fill: #f4f4fd;
 }
 .icon-social-team:hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   background-color: #404bbf;
 }
 .icon-ul {
@@ -403,10 +417,14 @@ body {
   border: 1px solid #8e8f99;
 }
 .icon-company:hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   fill: #404bbf;
 }
 .company-li a:focus .icon-company {
   fill: #404bbf;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .icon-company {
   fill: #8e8f99;
@@ -469,6 +487,8 @@ body {
   gap: 16px;
 }
 .icon-social:hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   background-color: #31d0aa;
 }
 .customers {
@@ -538,12 +558,54 @@ body {
 }
 
 .portfolio-link:hover .portfolio-img {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.index-list:hover {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+.backdrop {
+  /* display: flex; align-items: center; justify-content: center; */
+  position: fixed;
+  background-color: rgba(46, 47, 66, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: 300ms scale 0;
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 400ms linear;
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+.close {
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+  stroke-width: 1px;
+  border-radius: 50%;
+  border: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.icon {
+  fill: #2e2f42;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translatex(50%);
+  transition: 400ms linear;
 }
