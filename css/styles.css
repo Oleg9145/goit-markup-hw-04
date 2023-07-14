@@ -496,7 +496,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .media {
+  margin-bottom: 16px;
   color: #fff;
 
   font-family: Roboto;
