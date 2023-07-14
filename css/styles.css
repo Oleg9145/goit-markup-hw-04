@@ -70,12 +70,12 @@ body {
 }
 /*-------------------------HEADER------------------------*/
 .header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid #e7e9fc;
 }
 
 .header-div {
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   display: flex;
   align-items: center;
 }
@@ -127,6 +127,8 @@ body {
 .portfolio-a {
 }
 .studio-a {
+  position: relative;
+  color: #404bbf;
 }
 .contacts-a {
 }
@@ -431,7 +433,7 @@ body {
   align-items: center;
 }
 .section-five {
-  padding-top: 120px;
+  padding: 120px 0 120px;
 }
 .customers {
   margin-bottom: 72px;
@@ -439,6 +441,7 @@ body {
 .company-li {
   width: calc((100% - 120px) / 6);
   border-radius: 4px;
+  height: 88px;
 }
 .company-a {
   border: 1px solid #8e8f99;
