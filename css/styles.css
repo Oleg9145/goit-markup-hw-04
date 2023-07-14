@@ -402,6 +402,7 @@ body {
   margin-bottom: 8px;
 }
 .team-par {
+  padding-bottom: 8px;
   text-align: center;
 }
 
@@ -424,16 +425,15 @@ body {
   background-color: #404bbf;
 }
 .icon-ul {
-  padding-bottom: 32px;
   padding-left: 0;
-  margin: 0;
+
   gap: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .section-five {
-  padding: 120px 0 120px;
+  padding-top: 120px;
 }
 .customers {
   margin-bottom: 72px;
