@@ -476,11 +476,10 @@ body {
   padding: 100px 0;
 }
 
-.olo {
+.footer-container {
   display: flex;
-  width: 592px;
+  align-items: baseline;
 }
-
 .icon-social {
   display: flex;
   width: 40px;
@@ -500,7 +499,9 @@ body {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-
+.footer-div {
+  margin-right: 120px;
+}
 .footer-div a {
   display: inline-block;
   margin-bottom: 16px;
