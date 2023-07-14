@@ -444,6 +444,7 @@ body {
   height: 88px;
 }
 .company-a {
+  width: calc((100% - 120px) / 6);
   border: 1px solid #8e8f99;
   height: 88px;
   width: 100%;
