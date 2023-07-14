@@ -8,6 +8,7 @@
   --footer-p-color: #f4f4fd;
   --button-color: #4d5ae5;
   --background-color-body: #ffffff;
+  --link-color: #8e8f99;
 }
 h1,
 h2,
@@ -73,9 +74,12 @@ body {
 }
 
 .header-div {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   display: flex;
   align-items: center;
 }
+
 .nav a {
   padding: 24px 0 24px;
   display: block;
@@ -112,11 +116,12 @@ body {
   background-color: #404bbf;
 }
 .studio::after {
+  bottom: -1px;
   content: "";
   border-radius: 2px;
   display: block;
   height: 4px;
-  flex-shrink: 0;
+
   background-color: #404bbf;
 }
 .link {
@@ -152,7 +157,10 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-bg.jpg);
-  width: 1440px;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin: 0 auto;
 }
 
@@ -172,6 +180,7 @@ body {
   letter-spacing: 0.02em;
 }
 .botton-one {
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   min-width: 169px;
   padding: 16px 32px;
@@ -323,8 +332,11 @@ body {
 }
 
 .icon-strategy {
-  padding-left: 100px;
-  padding-top: 24px;
+  margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
   width: 264px;
   height: 112px;
   flex-shrink: 0;
@@ -366,7 +378,7 @@ body {
   gap: 24px;
 }
 .team-div {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 .index-list {
   width: calc((100% - 72px) / 4);
@@ -396,6 +408,7 @@ body {
 .icon-team {
   fill: #f4f4fd;
 }
+
 .icon-social-team:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -410,16 +423,37 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.company-li {
-  border-radius: 4px;
-
-  border: 1px solid #8e8f99;
+.section-five {
+  padding-top: 120px;
 }
-.icon-company:hover {
+.customers {
+  margin-bottom: 72px;
+}
+.company-li {
+  width: calc((100% - 120px) / 6);
+  border-radius: 4px;
+}
+.company-a {
+  border: 1px solid #8e8f99;
+  height: 88px;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--link-color);
+}
+.company-a:is(:hover, :focus) {
+  border-color: var(--hover-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-  fill: #404bbf;
+  fill: var(--hover-color);
+}
+.icon-company:is(:hover, :focus) {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  fill: var(--hover-color);
 }
 .company-li a:focus .icon-company {
   fill: #404bbf;
@@ -492,6 +526,7 @@ body {
   background-color: #31d0aa;
 }
 .customers {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -578,7 +613,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition: 400ms linear;
+  transition: transform 400ms linear;
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
@@ -607,5 +642,4 @@ body {
 }
 .backdrop.is-hidden .modal {
   transform: translatex(50%);
-  transition: 400ms linear;
 }
