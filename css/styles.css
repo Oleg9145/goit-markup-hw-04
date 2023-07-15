@@ -128,19 +128,21 @@ body {
   width: 100%;
   background-color: #404bbf;
 }
-.portfolio-a {
+.portfolio a {
   color: #404bbf;
-
+}
+.studio a {
+  color: #404bbf;
+}
+.portfolio-a {
   position: relative;
 }
-.menu-li {
-}
+
 .contakts-a {
   position: relative;
 }
 .studio-a {
   position: relative;
-  color: #404bbf;
 }
 
 .link {
@@ -159,12 +161,12 @@ body {
   list-style: none;
 }
 .li-style {
+  color: var(--color-fon);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color-fon);
 }
 /*------------------section-one--------------------------*/
 
@@ -635,10 +637,11 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+/*-----------Модал----------*/
 .backdrop {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* display: flex; align-items: center; justify-content: center; */
+
   position: fixed;
   background-color: rgba(46, 47, 66, 0.4);
   width: 100%;
@@ -647,17 +650,16 @@ body {
   transition: 300ms scale 0;
 }
 .modal {
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   left: 50%;
   top: 50%;
-
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 400ms linear;
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
   background-color: #fcfcfc;
+  transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
@@ -674,10 +676,11 @@ body {
   stroke-width: 1px;
   border-radius: 50%;
   cursor: pointer;
-  border: rgba(0, 0, 0, 0.1);
+
   position: absolute;
   top: 24px;
   right: 24px;
+  padding: 0;
 }
 .close:is(:hover, :focus) {
   background-color: #404bbf;
@@ -686,7 +689,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2e2f42;
 }
-.icon:is(:hover, :focus) {
+.close:is(:hover, :focus) .icon {
   fill: #ffffff;
 }
 .is-hidden {
