@@ -416,10 +416,11 @@ body {
   align-items: center;
 }
 .icon-team {
+  fill: currentColor;
   fill: #f4f4fd;
 }
 
-.icon-social-team:hover {
+.icon-social-team:is(:hover, :focus) {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   background-color: #404bbf;
@@ -433,7 +434,7 @@ body {
   align-items: center;
 }
 .section-five {
-  padding-top: 120px;
+  padding: 120px 0 120px;
 }
 .customers {
   margin-bottom: 72px;
@@ -466,7 +467,7 @@ body {
   transition-duration: 250ms;
   fill: var(--hover-color);
 }
-.company-li a:focus .icon-company {
+.company-li a:is(:hover, :focus) .icon-company {
   fill: #404bbf;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -490,6 +491,7 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: start;
 }
 .icon-social {
   display: flex;
@@ -527,14 +529,14 @@ body {
   flex-direction: column;
 }
 .icon-footer {
-  fill: #fff;
+  fill: var(--footer-p-color);
 }
 .icon-f-ul {
   padding: 0;
   display: flex;
   gap: 16px;
 }
-.icon-social:hover {
+.icon-social:is(:hover, :focus) {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   background-color: #31d0aa;
