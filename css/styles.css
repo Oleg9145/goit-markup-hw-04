@@ -459,7 +459,7 @@ body {
 }
 .company-li {
   width: calc((100% - 120px) / 6);
-  border-radius: 4px;
+
   height: 88px;
 }
 .company-a {
