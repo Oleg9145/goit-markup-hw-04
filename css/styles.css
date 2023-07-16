@@ -632,10 +632,10 @@ body {
   position: relative;
   overflow: hidden;
 }
-.portfolio-link :is(:hover, :focus) .projekt-par-two {
+.portfolio-link:is(:hover, :focus) .projekt-par-two {
   transform: translateY(0%);
 }
-.portfolio-list a:hover, .portfolio-list a:focus {
+.portfolio-list a:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -652,8 +652,6 @@ body {
   top: 0;
   transition: 300ms scale 0;
 }
-
-
 .modal {
   position: absolute;
   left: 50%;
@@ -682,6 +680,7 @@ body {
   stroke-width: 1px;
   border-radius: 50%;
   cursor: pointer;
+
   position: absolute;
   top: 24px;
   right: 24px;
@@ -690,8 +689,6 @@ body {
 .close:is(:hover, :focus) {
   border: none;
   background-color: #404bbf;
-}
-
 }
 .icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
