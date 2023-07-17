@@ -148,6 +148,11 @@ body {
 .link {
   text-decoration: none;
 }
+.color:is(:hover, :focus) {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  color: #404bbf;
+}
 .li-style:hover,
 .li-style:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -319,6 +324,11 @@ body {
   color: var(--color-fon);
 }
 .color {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--p-color);
 }
 /*-------------------------section-two----------------------------*/
@@ -419,7 +429,7 @@ body {
   margin-bottom: 8px;
 }
 .team-par {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -456,6 +466,12 @@ body {
 }
 .customers {
   margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--color-fon);
 }
 .company-li {
   width: calc((100% - 120px) / 6);
@@ -492,7 +508,6 @@ body {
   fill: currentColor;
 }
 .company-ul {
-  padding-bottom: 120px;
   gap: 24px;
   display: flex;
   justify-content: center;
@@ -558,16 +573,7 @@ body {
   transition-duration: 250ms;
   background-color: #31d0aa;
 }
-.customers {
-  margin-bottom: 72px;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--color-fon);
-  padding-top: 120px;
-}
+
 /*-----------PORTFOLIO------------*/
 .buttom-p .all {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -635,7 +641,7 @@ body {
 .portfolio-link:is(:hover, :focus) .projekt-par-two {
   transform: translateY(0%);
 }
-.portfolio-list a:is(:hover, :focus) {
+.portfolio-list a:is(:hover, :focus) .portfolio-img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
