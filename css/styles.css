@@ -641,7 +641,7 @@ body {
 .portfolio-link:is(:hover, :focus) .projekt-par-two {
   transform: translateY(0%);
 }
-.portfolio-link:is(:hover, :focus) .portfolio-img {
+.portfolio-link:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
