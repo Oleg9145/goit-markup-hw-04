@@ -641,7 +641,7 @@ body {
 .portfolio-link:is(:hover, :focus) .projekt-par-two {
   transform: translateY(0%);
 }
-.portfolio-list a:is(:hover, :focus) .portfolio-img {
+.portfolio-link:is(:hover, :focus) .portfolio-img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -710,4 +710,30 @@ body {
 }
 .backdrop.is-hidden .modal {
   transform: translatex(50%);
+}
+.modal-h {
+  padding-top: 72px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5px;
+  letter-spacing: 0.02em;
+  padding-left: 24px;
+}
+.form {
+  align-items: flex-start;
+  width: 360px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.name {
+  border-radius: 4px;
+  border: 1px solid #4d5ae5;
+}
+.name:is(:hover, :focus) .icon-modal {
+  fill: #4d5ae5;
+}
+.icon-modal {
 }
